@@ -109,3 +109,34 @@ if (window.matchMedia("(min-width: 400px)").matches) {
 }
 
 ```
+
+4. know how @media works
+
+```javascript
+/* Define a media query for screens with a maximum width of 600px */
+@media (max-width: 600px) {
+  /* CSS rules to apply when the screen width is 600px or less */
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    width: 90%;
+  }
+}
+
+/* Define a media query for screens with a minimum width of 601px */
+@media (min-width: 601px) {
+  /* CSS rules to apply when the screen width is 601px or more */
+  body {
+    font-size: 18px;
+  }
+
+  .container {
+    width: 80%;
+  }
+}
+```
+
+5. know how to use framer-motion
+>https://www.framer.com/motion/introduction/
