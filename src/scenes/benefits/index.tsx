@@ -1,8 +1,8 @@
 import { HomeModernIcon, UserGroupIcon, AcademicCapIcon } from "@heroicons/react/24/solid";
 import { motion } from 'framer-motion';
-import { SelectedPage, BenefitType } from '../../shared/type';
+import { SelectedPage, BenefitType } from '@/shared/type';
 import Benefit from '@/scenes/benefits/Benefit';
-import HText from '../../shared/HText';
+import HText from '@/shared/HText';
 
 const container = {
     hidden:{},
@@ -11,7 +11,7 @@ const container = {
     },
 }
 type Props = {
-    setSeletedPage: (value: SelectedPage) => void;
+    setSelectedPage: (value: SelectedPage) => void;
 }
 
 const Benefits = ({setSelectedPage}: Props) => {
@@ -58,7 +58,7 @@ const Benefits = ({setSelectedPage}: Props) => {
             variants = {container}
             className="mt-5 items-center justify-between gap-8 md:flex">
                 {benefits.map((benefit : BenefitType)=> (
-                    <Benefit key={benefit.title} icon={benefit.icon} title={benefit.title} description={benefit.description}/>
+                    <Benefit key={benefit.title} icon={benefit.icon} title={benefit.title} description={benefit.description} setSelectedPage={setSelectedPage}/>
                 ))}
         </motion.div>
 

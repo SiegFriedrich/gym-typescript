@@ -4,8 +4,9 @@ import { SelectedPage } from '@/shared/type';
 import Home from '@/scenes/home';
 import Benefits from '@/scenes/benefits';
 
+
 function App() {
-  const [selectedPage, setSelectedPage] = useState<string>("home");
+  const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home);
   const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true);
   useEffect(()=>{
     const handleScroll = () =>{

@@ -1,5 +1,4 @@
 import { SelectedPage } from '../../shared/type';
-import React from 'react'
 import ActionButton from '../navbar/ActionButton';
 import useMediaQuery from '../../hooks/useMediaQuery';
 import HomePageText from "@/assets/HomePageText.png" 
