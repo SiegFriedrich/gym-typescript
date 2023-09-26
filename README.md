@@ -140,3 +140,18 @@ if (window.matchMedia("(min-width: 400px)").matches) {
 
 5. know how to use framer-motion
 >https://www.framer.com/motion/introduction/
+
+6. Use this method to replace {' '} to <span> tag
+
+```
+  <HText>
+  MILLIONS OF HAPPY MEMBERS GETTING{" "}
+      <span className="text-primary-500">FIT</span>
+  </HText>
+```
+
+7. install form library
+
+```
+npm i react-hook-form
+```
